@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge.Data.Classes
 {
-    public class Rectangulo : FormaGeometricaAux
+    public class Rectangulo : FormaGeometrica
     {
         private readonly decimal _base;
         private readonly decimal altura;
-        public Rectangulo(Idioma idioma, decimal _base, decimal altura ) : base(idioma)
+
+        public Rectangulo( decimal _base, decimal altura) : base ("Rectangle", "Rectangles")
         {
             this._base = _base;
             this.altura = altura;
